@@ -207,3 +207,10 @@ body {
     }
 
 }
+
+
+@media screen and (min-width: 2560px) {
+    .testimonials {
+        padding: 2rem 20rem;
+    }
+}
