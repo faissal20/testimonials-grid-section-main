@@ -29,7 +29,7 @@ body {
     font-family: var(--font-family);
     overflow-x: hidden;
     background-color: var(--main-backgroud);
-    font-size: clamp(0.813rem, 1vw + 0.8rem, 1rem);
+    font-size: clamp(0.813rem, 1vw + 0.8rem, .9rem);
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -153,14 +153,13 @@ body {
 }
 
 .user-title {
-    font-size: rem;
-    font-size: clamp(0.688rem, 1vw + 0.5rem, .8rem);
+    font-size: clamp(0.688rem, 1vw + 0.5rem, .7rem);
     line-height: 110%;
     color: inherit;
 }
 
 .card .title {
-    font-size: clamp(1.25rem, 1vw + 1rem, 1.6rem);
+    font-size: clamp(1.25rem, 1vw + 1rem, 1.3rem);
     font-weight: 600;
     line-height: 120%;
 }
