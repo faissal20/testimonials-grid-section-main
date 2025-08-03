@@ -46,8 +46,6 @@ body {
 }
 
 
-
-
 .card {
     width: 100%;
     display: flex;
@@ -63,64 +61,49 @@ body {
     color: var(--neutral-white);
 }
 
+.card:nth-child(1) .title,
+.card:nth-child(1) .user-name {
+    color: var(--primary-purple-50);
+}
+
 .card:nth-child(2) {
     background-color: var(--neutral-grey-500);
+    color: var(--neutral-grey-100);
+}
+
+.card:nth-child(2) .title,
+.card:nth-child(2) .user-name {
     color: var(--neutral-white);
 }
 
 .card:nth-child(3) {
     background-color: var(--neutral-white);
-    color: var(--neutral-black);
+    color: var(--neutral-grey-400);
+}
+
+.card:nth-child(3) .title,
+.card:nth-child(3) .user-name {
+    color: var(--neutral-grey-500);
 }
 
 .card:nth-child(4) {
     background-color: var(--neutral-dark-blue);
+    color: var(--neutral-grey-100);
+}
+
+.card:nth-child(4) .title,
+.card:nth-child(4) .user-name {
     color: var(--neutral-grey-200);
 }
 
 .card:nth-child(5) {
     background-color: var(--neutral-white);
-    color: var(--neutral-black);
+    color: var(--neutral-grey-400);
 }
 
-
-
-
-
-.card .info {
-    display: flex;
-    gap: 1rem;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-
-
-.card .info img {
-    width: 3rem;
-    object-fit: cover;
-    border: .2rem solid var(--primary-purple-50);
-    border-radius: 50%;
-    overflow: hidden;
-}
-
-.user-details h3 {
-    line-height: 110%;
-}
-
-.user-details p {
-    font-size: 0.688rem;
-    line-height: 110%;
-}
-
-.card .title {
-    font-size: 1.25rem;
-    font-weight: 600;
-    line-height: 120%;
-}
-
-.card .content {
-    line-height: 140%;
+.card:nth-child(5) .title,
+.card:nth-child(5) .user-name {
+    color: var(--neutral-grey-400);
 }
 
 .card:nth-child(1) .content {
@@ -135,6 +118,43 @@ body {
 .card:nth-child(3) .content,
 .card:nth-child(5) .content {
     color: var(--neutral-grey-400);
+}
+
+
+.card .info {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+.card .info img {
+    width: 3rem;
+    object-fit: cover;
+    border: .2rem solid var(--primary-purple-50);
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.user-name {
+    line-height: 110%;
+}
+
+.user-title {
+    font-size: 0.688rem;
+    line-height: 110%;
+    color: inherit;
+}
+
+.card .title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 120%;
+}
+
+.card .content {
+    line-height: 140%;
 }
 
 
